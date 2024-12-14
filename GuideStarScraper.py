@@ -35,25 +35,6 @@ def get_data_1(soup):
         return None
     
 
-# # Function to extract data 2
-# def get_data_2(URL):
-#     # Send a GET request to the URL
-#     response = requests.get(URL)
-    
-#     # Parse the response content with lxml
-#     tree = html.fromstring(response.content)
-    
-#     # Use the provided XPath to extract the data
-#     data_2_elements = tree.xpath('/html/body/form/div[3]/div[1]/table/tbody/tr[5]/td[2]/span/table[2]/tbody/tr[3]/td[2]/table/tbody/tr[1]/td/span/div[5]/table/tbody/tr/td[1]/span/div/span[2]')
-    
-#     # Check if any elements were found and get the text
-#     if data_2_elements:
-#         data_2_text = data_2_elements  # Assuming there's only one matching element
-#         return data_2_text.strip()
-#     else:
-#         return None
-
-
 # Function to extract data 2
 def get_data_2(soup):
     # Locate all <div> elements with the specific class
